@@ -5,10 +5,13 @@ title: Hank Quinlan, Horrible Cop
 
 
 
-{% assign projects = site.project | where: 'type', 'pr' %}
-{% for project in site.projects %}
-    <h1><a href = "project.url" ></a>{{project.name}}</h1>
-    <h2>Description</h2>
+{% assign projects = site.projects | where: 'type', 'pr' %}
+{% for project in projects %}
+    {% assign introduction = site.projects | where: 'title', 'Introduction' | where: 'project', project.pr_sn%}
+    {% for introduction in introduction %}
+        <h1><a href = "{{introduction.url}}" >{{project.name}}</a></h1>
+    {%endfor%}
+    <h2>Description:</h2>
     <p>{{ project.content | markdownify }}</p>
 {% endfor %}
 
