@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!--Setting Device Width-->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" href="{{"/assets/css/main.css" | relative_url}}"/>
+		</head>
+
+
+		<body>
+			<div class="topbar">
+				<a href="/">Home</a>
+		        <a href="#about">About</a>
+	        	<a href="#cv">CV</a>
+	        	<a href="#blog">Blog</a>
+			</div>
+
+			<div class="sidebar">
+				<!--Iterate over the sections of the specific project-->
+				{% assign sections = site.projects | where: 'project', page.project %}
+				{% for section in sections %}
+				<li>
+                    <a href="{{section.url}}"> {{section.title}} </a>
+				</li>
+				{% endfor %}
+			</div>
+
+		
+			
+			<!-- /.container -->
+			<div class="main">
+			
+			{{content}}
+			
+			</div>
+		
+		</body>
+	</html>

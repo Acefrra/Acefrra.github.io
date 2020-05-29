@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!--Setting Device Width-->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" href="{{"/assets/css/main.css" | relative_url}}"/>
+		</head>
+
+
+		<body>
+			
+			<div class="topbar">
+				<a href="/">Home</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			
+			<div>
+			
+			{{content}}
+			
+			</div><!-- /.container -->
+		</body>
+	</html>

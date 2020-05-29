@@ -1,0 +1,55 @@
+$font-stack: device-width;
+$side-bar_width: 150px;
+
+body{
+    position:absolute;
+}
+
+//Navigation Bar
+.topbar{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #808080;
+}
+
+.topbar a{
+    list-style: none;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    background-color: #6145c4;
+}
+
+
+//Sidebar
+.sidebar{
+    margin-top: 30px;
+    position: fixed;
+    left: 10px;
+    height: 100%;
+    width: $side-bar_width;
+    background-color: #aaaaaa;
+}
+
+.sidebar li{
+    list-style: none;
+    font-size: 24px;
+}
+
+.sidebar li a{
+    text-decoration: none;
+}
+
+.sidebar li:hover {
+    background-color: #6145c4;
+}
+
+.main{
+    position: relative;
+    margin-left: $side-bar_width+10;
+    padding: 0px 10px;
+}
+
