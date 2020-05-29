@@ -5,7 +5,7 @@ title: Hank Quinlan, Horrible Cop
 
 
 
-
+{% assign projects = site.project | where: 'type', 'pr' %}
 {% for project in site.projects %}
     <h1>{{project.name}}</h1>
     <h2>Description</h2>

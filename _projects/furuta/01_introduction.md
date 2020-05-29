@@ -3,6 +3,7 @@
 
     project: furuta
     title: Introduction
+    type: sect
 ---
 <h1> Introduction </h1>
 <p><h3>

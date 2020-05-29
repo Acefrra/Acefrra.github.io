@@ -1,4 +1,5 @@
 ---
+type: pr
 pr_sn: furuta
 name: Furuta Pendulum
 ---
