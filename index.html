@@ -7,7 +7,7 @@ title: Hank Quinlan, Horrible Cop
 
 {% assign projects = site.project | where: 'type', 'pr' %}
 {% for project in site.projects %}
-    <h1>{{project.name}}</h1>
+    <h1><a href = "project.url" ></a>{{project.name}}</h1>
     <h2>Description</h2>
     <p>{{ project.content | markdownify }}</p>
 {% endfor %}
