@@ -1,38 +1,31 @@
-$primary-color: #FFF;
-$text-color: #FFF;
-$accent-color: rgb(167, 79, 79);
-
-$link-color: #FFF;
-
-
-$side-bar_width: 150px;
-
+//Width
+    $side-bar-width: 150px;
+//Position
+    $top-position-documentation: 30px;
+    $top-position-projects: 30px;
 
 //Colors
-//Text
-$selection-color: #8b8b8b;
-$address-color: #000000;
-$bar-address-color: #ffffff;
-$selection-text-color: #000000;
-
-//Background
-$bg-color: #ffffff;
-$bar-bg-color: #585858;
-$selection-bg-color: #ffffff;
-
+    //Text
+    $selection-color: #8b8b8b;
+    $address-color: #000000;
+    $bar-address-color: #ffffff;
+    $selection-text-color: #000000;
+    //Background
+    $bg-color: #ffffff;
+    $bar-bg-color: #585858;
+    $selection-bg-color: #ffffff;
 //Fonts
-$body-font-family: 'Times New Roman';
-$body-font-thickness: 1; //1:normal 400:bold 900:very bold
+    //Body
+    $body-font-family: 'Times New Roman';
+    $body-font-thickness: 1; //1:normal 400:bold 900:very bold
+    //Header
+    $header-font-family: 'Times New Roman';
+    $header1-font-thickness: 900; //1:normal 400:bold 900:very bold
+    $header2-font-thickness: 600; 
+    $header3-font-thickness: 300; 
+    $header4-font-thickness: 100; 
+    $header5-font-thickness: 1; 
+    $header6-font-thickness: 1; 
 
-$header-font-family: 'Times New Roman';
-$header1-font-thickness: 900; //1:normal 400:bold 900:very bold
-$header2-font-thickness: 600; //1:normal 400:bold 900:very bold
-$header3-font-thickness: 300; //1:normal 400:bold 900:very bold
-$header4-font-thickness: 100; //1:normal 400:bold 900:very bold
-$header5-font-thickness: 1; //1:normal 400:bold 900:very bold
-$header6-font-thickness: 1; //1:normal 400:bold 900:very bold
-
-
-$paragraph-width: 50%;
 
 

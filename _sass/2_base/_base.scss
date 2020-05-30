@@ -1,64 +1,43 @@
 body{
-    position:absolute;
+    position: relative;
     background-color: $bg-color;
     font-family: $body-font-family;
     font-weight: $body-font-thickness;
 }
-
 a{
     color: $address-color;
     text-decoration: none;
 }
-
-@media screen and (max-width: 1920px) {
-    //desktop
-    .main{
-        position: relative;
-        margin-left: $side-bar_width+10;
-        width:60%;
-        padding: 0px 10px;
-    }
-  }
-  //phones
-  @media screen and (max-width: 600px) {
-    .main{
-        position: relative;
-        margin-left: $side-bar_width+10;
-        padding: 0px 10px;
-        width:50%;
-    }
-  }
-
 h1{
     font-family: $header-font-family;
     font-weight: $header1-font-thickness;
 }
-
 h2{
     font-family: $header-font-family;
     font-weight: $header2-font-thickness;
 }
-
 h3{
     font-family: $header-font-family;
     font-weight: $header3-font-thickness;
 }
-
 h4{
     font-family: $header-font-family;
     font-weight: $header4-font-thickness;
 }
-
 h5{
     font-family: $header-font-family;
     font-weight: $header5-font-thickness;
 }
 
+
+//Classes
 //Navigation Bar
 .topbar{
-    overflow: hidden;
+    top:0px;
+    position:fixed;
     background-color: $bar-bg-color;
-    width: 100%
+    width: 100%;
+    z-index: 10;
 }
 
 .topbar a{
@@ -80,7 +59,7 @@ h5{
 
 //Sidebar
 .sidebar{
-    margin-top: 30px;
+    margin-top: $top-position-documentation;
     position: fixed;
     left: 10px;
     height: 100%;
@@ -106,6 +85,47 @@ h5{
         color : $selection-text-color;
     }
 }
+
+@media screen and (max-width: 1920px) {
+    //desktop
+    .documentation{
+        position: relative;
+        top: $top-position-documentation;
+        margin-left: $side-bar_width+10;
+        width:60%;
+        padding: 0px 10px;
+    }
+  }
+  //phones
+@media screen and (max-width: 600px) {
+    .documentation{
+        top: $top-position-documentation;
+        position: relative;
+        margin-left: $side-bar_width+10;
+        padding: 0px 10px;
+        width:50%;
+    }
+  }
+  @media screen and (max-width: 1920px) {
+    //desktop
+    .projects{
+        position: relative;
+        top: $top-position-projects;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+  }
+  //phones
+@media screen and (max-width: 600px) {
+    .projects{
+        position: relative;
+        top: $top-position-projects;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+  }
 
 
 
