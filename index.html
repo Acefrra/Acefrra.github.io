@@ -3,8 +3,6 @@ layout: home
 title: Hank Quinlan, Horrible Cop
 ---
 
-
-
 {% assign projects = site.projects | where: 'type', 'pr' %}
 {% for project in projects %}
     {% assign introduction = site.projects | where: 'title', 'Introduction' | where: 'project', project.pr_sn%}

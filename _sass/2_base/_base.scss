@@ -1,26 +1,81 @@
-$font-stack: device-width;
-$side-bar_width: 150px;
-
 body{
     position:absolute;
+    background-color: $bg-color;
+    font-family: $body-font-family;
+    font-weight: $body-font-thickness;
+}
+
+a{
+    color: $address-color;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1920px) {
+    //desktop
+    .main{
+        position: relative;
+        margin-left: $side-bar_width+10;
+        width:60%;
+        padding: 0px 10px;
+    }
+  }
+  //phones
+  @media screen and (max-width: 600px) {
+    .main{
+        position: relative;
+        margin-left: $side-bar_width+10;
+        padding: 0px 10px;
+        width:50%;
+    }
+  }
+
+h1{
+    font-family: $header-font-family;
+    font-weight: $header1-font-thickness;
+}
+
+h2{
+    font-family: $header-font-family;
+    font-weight: $header2-font-thickness;
+}
+
+h3{
+    font-family: $header-font-family;
+    font-weight: $header3-font-thickness;
+}
+
+h4{
+    font-family: $header-font-family;
+    font-weight: $header4-font-thickness;
+}
+
+h5{
+    font-family: $header-font-family;
+    font-weight: $header5-font-thickness;
 }
 
 //Navigation Bar
 .topbar{
-    top: 0;
-    position: fixed;
-    width: 100%;
-    background-color: #808080;
+    overflow: hidden;
+    background-color: $bar-bg-color;
+    width: 100%
 }
 
 .topbar a{
-    list-style: none;
-    font-size: 24px;
+    //float: left;  //This makes the navigation bar thick
+    text-align: center;
+    color: $bar-address-color;
     text-decoration: none;
+    font-size: 24px;
+    padding: 10px; //Top and Bottom Spacing aren't displayed for inline elements
+    display: inline-block; //Displays an element as an inline-level block container.
+                            //The element itself is formatted as an inline element,
+                            //but you can apply height and width values
 }
 
 .topbar a:hover {
-    background-color: #6145c4;
+    background-color: $selection-bg-color;
+    color : $selection-text-color;
 }
 
 //Sidebar
@@ -30,25 +85,27 @@ body{
     left: 10px;
     height: 100%;
     width: $side-bar_width;
-    background-color: #aaaaaa;
+    background-color: $bar-bg-color;
+    z-index: 10;
 }
 
 .sidebar li{
     list-style: none;
     font-size: 24px;
+    padding: 10px 10px 10px 10px;
 }
 
 .sidebar li a{
     text-decoration: none;
+    color: $bar-address-color;
 }
 
 .sidebar li:hover {
-    background-color: #6145c4;
+    background-color: $selection-bg-color;
+    a {
+        color : $selection-text-color;
+    }
 }
 
-.main{
-    position: relative;
-    margin-left: $side-bar_width+10;
-    padding: 0px 10px;
-}
+
 
