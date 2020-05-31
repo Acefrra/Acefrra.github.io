@@ -2,7 +2,7 @@
     project: furuta
     type: subsect
     section: Introduction
-    title: Subsection 3
+    title: The Blue Zero Interface
 ---
 
 
