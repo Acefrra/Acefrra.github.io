@@ -1,0 +1,7 @@
+- project: furuta
+  description: Furuta Pendulum project images
+  imagefolder: /_projects/furuta/images
+  images:
+  - id: 1
+    name: furuta_image.jpeg
+    caption: 

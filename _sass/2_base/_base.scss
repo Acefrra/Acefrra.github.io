@@ -34,6 +34,21 @@ h5{
 
 
 //Classes
+.image{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.image h4{
+    text-align: center;
+}
+.image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 //Navigation Bar
 .topbar{
     top:0px;

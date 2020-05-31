@@ -14,6 +14,5 @@ layout: documentation
 ### ajkdaskda lxzlxllllllllllllllllllllllllllllllllllllllz
 > skdksld
 ### 
-<h3>
-Here, have some: $$\pi$$
-</h3>
+
+This is classic paragraph and here, have some: $$\pi$$

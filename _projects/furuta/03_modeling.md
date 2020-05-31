@@ -2,8 +2,12 @@
     layout: documentation
 
     project: furuta
-    title: Implementation
+    title: Mathematical Modeling
     type: sect
 ---
 
-This is the second paragraph.
+
+
+<footer>
+	
+</footer>
