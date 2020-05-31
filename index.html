@@ -1,15 +1,15 @@
 ---
 layout: home
-title: Hank Quinlan, Horrible Cop
+title: Projects
 ---
 
 {% assign projects = site.projects | where: 'type', 'pr' %}
 {% for project in projects %}
     {% assign introduction = site.projects | where: 'title', 'Introduction' | where: 'project', project.pr_sn%}
     {% for introduction in introduction %}
-        <h1><a href = "{{introduction.url}}" >{{project.name}}</a></h1>
-    {%endfor%}
-    <h2>Description:</h2>
+        <a href = "{{introduction.url}}" ><h1>{{project.name}}</h1></a>
+    {% endfor %}
+    
     <p>{{ project.content | markdownify }}</p>
 {% endfor %}
 

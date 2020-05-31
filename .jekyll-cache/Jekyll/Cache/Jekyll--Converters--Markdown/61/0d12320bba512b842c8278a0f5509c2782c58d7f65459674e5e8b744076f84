@@ -1,16 +1,4 @@
----
-    layout: documentation
-
-    project: furuta
-    title: Introduction
-    type: sect
----
-
-
-This is my first sentence
-
-
-
+I"o<p>This is my first sentence</p>
 
 <p><h3>
     
@@ -21,3 +9,4 @@ This is my first sentence
 <footer>
 	
 </footer>
+:ET

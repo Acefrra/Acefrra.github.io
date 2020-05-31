@@ -1,10 +1,5 @@
----
-type: pr
-pr_sn: furuta
-name: Furuta Pendulum
----
-
-<h3>
+I" <h3>
     This project consists in implementing a controller in Matlab to stabilize a Furuta Pendulum (built within the Coppelia environment) about the upward position. The connection between the two pieces of software has been realized using CoppeliaRobotics' B0-based remote API.
 </h3>
 
+:ET

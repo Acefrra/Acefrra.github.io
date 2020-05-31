@@ -4,6 +4,9 @@ body{
     font-family: $body-font-family;
     font-weight: $body-font-thickness;
 }
+p{
+    font-size: $text-size;
+}
 a{
     color: $address-color;
     text-decoration: none;
@@ -115,6 +118,10 @@ h5{
         margin-right: auto;
         width: 50%;
     }
+    .projects h1{
+        position: relative;
+        text-align: center;
+    }
   }
   //phones
 @media screen and (max-width: 600px) {
@@ -124,6 +131,10 @@ h5{
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+    .projects h1{
+        position: relative;
+        text-align: center;
     }
   }
 
