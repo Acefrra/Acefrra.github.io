@@ -1,0 +1,11 @@
+I"è<p>This is a subsection example</p>
+
+<div class="image_left">
+    <!--Path to the image-->
+     <img src="images/CoppeliaSim_logo.png" style="width: 50%;" />
+    <!--Caption-->
+    <h4></h4>
+</div>
+<div style="clear: left;">
+</div>
+:ET

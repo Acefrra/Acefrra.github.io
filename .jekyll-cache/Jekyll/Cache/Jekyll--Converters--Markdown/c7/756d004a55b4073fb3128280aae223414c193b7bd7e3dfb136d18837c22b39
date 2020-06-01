@@ -1,0 +1,4 @@
+I"a<p>This is a subsection example</p>
+
+<p>{% include_relative images/furuta_image.html %}</p>
+:ET

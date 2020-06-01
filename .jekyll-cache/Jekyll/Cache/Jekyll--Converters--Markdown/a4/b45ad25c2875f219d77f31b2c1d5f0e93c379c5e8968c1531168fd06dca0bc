@@ -1,7 +1,12 @@
-
-<div class="image_center">
+I"Ú
+<div class="image">
     <!--Path to the image-->
      <img src="images/furuta_image.jpeg" />
     <!--Caption-->
     <h4>An example of a furuta pendulum - Credit: Adafruit Industries.</h4>
 </div>
+
+<footer>
+	
+</footer>
+:ET

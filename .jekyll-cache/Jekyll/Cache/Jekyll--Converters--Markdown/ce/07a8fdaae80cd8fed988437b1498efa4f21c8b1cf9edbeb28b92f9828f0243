@@ -1,7 +1,9 @@
+I"è<p>This is a subsection example</p>
 
-<div class="image_center">
+<div class="image">
     <!--Path to the image-->
      <img src="images/furuta_image.jpeg" />
     <!--Caption-->
     <h4>An example of a furuta pendulum - Credit: Adafruit Industries.</h4>
 </div>
+:ET

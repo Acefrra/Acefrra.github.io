@@ -1,9 +1,0 @@
-I"	<p>The Furuta Pendulum is a very well known process. It is made up of a rotating arm on an horizontal plane actuated by a motor (in our case a DC brushless motor), connected with a vertical arm (the pendulum). It is an underactuated robot, since the system has 2 degrees of freedom, but only one is controlled by a motor.</p>
-
-<div class="image">
-    <!--Path to the image-->
-    <img src="images/furuta_image.jpeg" />
-    <!--Caption-->
-    <h4>An example of a furuta pendulum - Credit: Adafruit Industries.</h4>
-</div>
-:ET

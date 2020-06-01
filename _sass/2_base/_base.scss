@@ -7,6 +7,9 @@ body{
 p{
     font-size: $text-size;
 }
+li{
+    font-size: $text-size;
+}
 a{
     color: $address-color;
     text-decoration: none;
@@ -34,20 +37,33 @@ h5{
 
 
 //Classes
-.image{
+.image_center{
     position: relative;
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-right: auto;     
 }
-.image h4{
+.image_center h4{
     text-align: center;
 }
-.image img{
+.image_center img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+.image_left{
+    position: relative;
+    float: left; //remember to clear float after using it
+    display: inline;
+}
+.image_left h4{
+    position:relative;
+    text-align: center;
+}
+.image_left img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 //Navigation Bar
 .topbar{
