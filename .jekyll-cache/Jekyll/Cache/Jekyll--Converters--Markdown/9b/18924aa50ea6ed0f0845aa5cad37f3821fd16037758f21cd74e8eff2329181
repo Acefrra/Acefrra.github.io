@@ -1,8 +1,0 @@
-I"@<p>The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates, then they wrote down the lagrangian equation:</p>
-
-\[\frac{\delta L}{\delta t * \delta q_{i}} L\]
-
-<footer>
-	
-</footer>
-:ET

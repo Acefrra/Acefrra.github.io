@@ -31,6 +31,18 @@ For the pendulum:
 * it has a lumped mass $$m_{p}$$ positioned at $$ \frac{L_{p}}{2} $$;
 * length $$ L_{p} $$;
 
+We have 2 differential equations of motion:
+
+$$ \frac{\delta L}{\delta t \delta \theta} - \frac{\delta L}{\delta \theta} = Q_{1}$$
+
+$$ \frac{\delta L}{\delta t \delta \alpha} - \frac{\delta L}{\delta \alpha} = Q_{2}$$
+
+with $$ Q_{1} = \tau - B_{r} \dot{\theta} $$ and $$Q_{2} = -B_{p}\dot{\alpha}$$, where $$B_{r}$$ and $$B_{p}$$ are the coefficent of viscous friction, and $$\tau$$ is the torque applied by the attached motor.
+
+
+As a result the lagrange equation of motion are obtained:
+
+
 
 
 <br> <!--Blank Row-->
@@ -43,3 +55,4 @@ For the pendulum:
 <footer>
 	something
 </footer>
+

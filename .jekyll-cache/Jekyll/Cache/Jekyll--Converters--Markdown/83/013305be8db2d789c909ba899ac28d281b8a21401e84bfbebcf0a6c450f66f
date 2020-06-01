@@ -1,9 +1,0 @@
-I"<p>This is a subsection example</p>
-
-<div class="image">
-    <!--Path to the image-->
-     &lt;img src="images/CoppeliaSim_logo.png" style="width: 50%"";/&gt;
-    <!--Caption-->
-    <h4>An example of a furuta pendulum - Credit: Adafruit Industries.</h4>
-</div>
-:ET

@@ -1,0 +1,47 @@
+I"ç<p>The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates \([q_{1}, q_{2}, ...... q{n}]\) with \(n = d.o.f\).</p>
+
+<div class="image_center">
+    <!--Path to the image-->
+     <img src="images/model.jpeg" style="width:40%;" />
+    <!--Caption-->
+    <h4>Coordinates of the system - Credit: Quanser.</h4>
+</div>
+
+<p>They decided to describe the system with the angles \([\theta(t) , \alpha(t)]\), with the angles positive for CCW rotations of the pendulum,. The angle alpha is measured from the positive \(z\) semi-axis.</p>
+
+<p>then they wrote down the lagrangian equation:</p>
+
+\[\frac{\delta L}{\delta t \delta q_{i}} - \frac{\delta L}{\delta q_{i}} = Q_{i}\]
+
+<p>Where L = T - V is the lagrangian function, with T kinetic energy and V is the potential energy of the whole system whilst \(Q_{i}\) are the generalized non-conservative forces acting on the entire system with respect to the coordinate \(q_{i}\).</p>
+
+<p>For the rotary arm:</p>
+
+<ul>
+  <li>it‚Äôs massless, with inertia \(J_{r}\);</li>
+  <li>length \(L_{r}\);</li>
+</ul>
+
+<p>For the pendulum:</p>
+
+<ul>
+  <li>inertia \(J_{p}\);</li>
+  <li>it has a lumped mass \(m_{p}\) positioned at \(\frac{L_{p}}{2}\);</li>
+  <li>length \(L_{p}\);</li>
+</ul>
+
+<p>We have 2 differential equations of motion:</p>
+
+<p>$$ \frac{\delta L}{\delta t \delta \theta - \frac{\delta L}{\delta \theta} = Q_{1}%$</p>
+
+<!-- $$ \frac{\delta L}{\delta t \delta \alpha - \frac{\delta L}{\delta \alpha} = Q_{2}$$ -->
+
+<p><br /> <!--Blank Row-->
+<br />
+<br />
+<br /></p>
+
+<footer>
+	something
+</footer>
+:ET
