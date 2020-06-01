@@ -6,7 +6,7 @@
     type: sect
 ---
 
-The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates $$[q_{1}, q_{2}, ...... q{n}]$$ with $$ n = d.o.f $$.
+The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates $$[q_{1}, q_{2}, ...... q_{n}]$$ with $$ n = d.o.f $$.
 
 {% include_relative images/model.html %}
 
@@ -40,19 +40,19 @@ $$ \frac{\delta L}{\delta t \delta \alpha} - \frac{\delta L}{\delta \alpha} = Q_
 with $$ Q_{1} = \tau - B_{r} \dot{\theta} $$ and $$Q_{2} = -B_{p}\dot{\alpha}$$, where $$B_{r}$$ and $$B_{p}$$ are the coefficent of viscous friction, and $$\tau$$ is the torque applied by the attached motor.
 
 
-As a result the lagrange equation of motion are obtained:
+As a result the equations of motion are obtained:
+
+<div style="overflow:auto;">
+Equation 1:
+$$(m_{p}L^{2}_{r} +\frac{1}{4}m_{p}L_{p}^{2} - \frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)^{2} + J_{r})\ddot{\theta} - (\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha))\ddot{\alpha}+(\frac{1}{2}m_{p}L_{p}^{2}sin(\alpha)cos(\alpha))\dot{\theta}\dot{\alpha}+(\frac{1}{2}m_{p}L_{p}L_{r}sin(\alpha))\dot{\alpha}^{2} = \tau - B_{r}\dot{\theta}$$
+</div>
+<div style="overflow:auto;">
+Equation 2:
+$$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{theta}{2}-\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{alpha}$$
+</div>
 
 
 
 
-<br> <!--Blank Row-->
-<br>
-<br>
-<br>
 
-
-
-<footer>
-	something
-</footer>
 

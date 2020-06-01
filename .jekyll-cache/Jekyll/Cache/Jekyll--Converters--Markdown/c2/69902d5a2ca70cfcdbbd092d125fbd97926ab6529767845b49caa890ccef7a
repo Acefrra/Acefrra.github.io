@@ -1,0 +1,12 @@
+I"¸<p>The software Maple is a powerful symbolic tool, which has been created to generate the symbolic linear model, that would have been later used by Matlab, to compute the feedback controller.</p>
+
+<div class="image_left" style="width:40%"><!--Set the width here-->
+    <!--Path to the image-->
+    <img src="images/Maple_logo.png" style="width:100%" />
+    <!--Caption-->
+    <!--<h4>Maple</h4>-->
+</div>
+<div style="clear: left;">
+</div>
+
+:ET
