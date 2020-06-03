@@ -56,3 +56,4 @@ $$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_
 
 
 
+

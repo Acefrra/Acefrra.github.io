@@ -1,0 +1,5 @@
+I"6<p>The gain controller K is gonna be built over a LTI system which is of the form:</p>
+
+\[-\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{theta}{2}-\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{alpha}\]
+
+:ET

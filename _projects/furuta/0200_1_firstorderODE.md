@@ -5,6 +5,17 @@
     title: Reducing to first order ODE
 ---
 
-After 
+The gain controller K is gonna be built over a LTI system which is of the form:
 
 
+$$ \sigma  0$$
+
+The gain controller K is gonna be built over a LTI system which is of the form:
+
+The gain controller K is gonna be built over a LTI system which is of the form:
+
+* askakda
+
+* jasdj
+
+* dsfsfsdf

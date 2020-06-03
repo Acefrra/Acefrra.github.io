@@ -17,7 +17,7 @@
 		
 	<!-- Script to run math/tex script-->
 	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
-</head>
+	</head>
 
 
 		<body>
@@ -49,7 +49,7 @@
 				{% assign subsections = site.projects | where: 'project', page.project | where: 'type', 'subsect' | where: 'section', page.title%}
 				{% for subsection in subsections %}
 				<h2>{{subsection.title}}</h2>
-				{{subsection.content | markdownify}}
+				{{subsection.content }}
 				{%endfor%}
 
 				
