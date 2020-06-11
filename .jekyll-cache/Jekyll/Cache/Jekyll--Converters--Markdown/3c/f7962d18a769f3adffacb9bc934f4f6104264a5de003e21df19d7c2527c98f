@@ -1,0 +1,4 @@
+I",<p>At this point it is sufficient to linearize the model to start designing the linear controller K. The goal is to keep the pendulum upward. According to the model, this configuration is associated with the state:</p>
+
+<p>\(\theta = \theta_{0}, \alpha = 0, \theta_{dot} = 0, \alpha_{dot} = 0\).</p>
+:ET

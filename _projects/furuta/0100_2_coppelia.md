@@ -10,7 +10,3 @@ The CoppeliaSim simulator allows to create physical scenes in order to simulate 
 {% include_relative images/CoppeliaSim_logo.html %}
 
 The software is integrated within other environments like Matlab or Python, which allows to exploit the tons of libraries of computation power they have.
-
-* lslsd
-
-* adaka

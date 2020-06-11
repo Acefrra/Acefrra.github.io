@@ -1,0 +1,8 @@
+I"z<p>At this point it is sufficient to linearize the model to start designing the linear controller K. By linearing the model, we are able to approximate and replace non-linear components (\(cos, sin, ^{2}, ^{3}, etc..\)) with linear ones. This approximation is made about an operating point, and it is valid around it. As long the error is low enough it is possible to consider the linear version over the non-linear.</p>
+
+<p>The goal is to keep the pendulum upward. According to the model, this configuration is associated with the state:</p>
+
+<p>\(\theta = \theta_{0}, \alpha = 0, \theta_{dot} = 0, \alpha_{dot} = 0\).</p>
+
+<p>B</p>
+:ET

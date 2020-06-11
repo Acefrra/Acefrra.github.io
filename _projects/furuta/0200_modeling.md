@@ -51,6 +51,20 @@ Equation 2:
 $$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{theta}{2}-\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{alpha}$$
 </div>
 
+To define an equation, in Maple we simply do:
+
+$$
+eq := equation;
+$$
+
+Expressing the time for the variable, but omitting it for the parameters. For example to define equation1 we would write:
+
+<code>
+    eq := m__p*L^2__r + 1/4*m__p*L__p^2 - 1/4*m__p*L__p^2*cos(alpha)^2 + J__r*diff(theta,t,t) - 1/2*(m__p*L__p*L__r*cos(alpha))*diff(alpha(t),t,t)*diff(alpha,t,t) + (1/2*m__p*L__p^2*sin(alpha)*cos(alpha))*diff(theta,t)*diff(alpha,t)+(1/2*m__p*L__p*L__r*sin(alpha))*diff(alpha,t)^2 = tau - B__r*diff(theta(t),t)
+</code>
+
+In particular <code> __p </code> is used to write something at pedix, <code> diff(theta(t),t) </code>, compute the first derivative of theta(t) with respect to t (the function must be declared as function of t), <code> diff(theta(t),t,t) </code> is for the second derivative. And we use round brackets to define the order of operations. 
+
 
 
 
