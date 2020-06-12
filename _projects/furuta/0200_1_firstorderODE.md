@@ -33,5 +33,5 @@ eqs := merge(eq1, eq2):
 </code>
 
 <code>
-first_order := merge(subs(add_diff, eqs), add_diff):
+eqs_first_order := merge(subs(add_diff, eqs), add_diff):
 </code>

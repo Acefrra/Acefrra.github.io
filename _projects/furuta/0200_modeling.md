@@ -10,15 +10,15 @@ The model of the system is from Quansar. To model the system they used a lagrang
 
 {% include_relative images/model.html %}
 
-They decided to describe the system with the angles $$[\theta(t) , \alpha(t)]$$, with the angles positive for CCW rotations of the pendulum,. The angle alpha is measured from the positive $$z$$ semi-axis.
+They decided to describe the system with the angles $$[\theta(t) , \alpha(t)]$$, with the angles positive for CCW rotations of the pendulum. The angle alpha is measured from the positive $$z$$ semi-axis.
 
-
-
- then they wrote down the lagrangian equation:
+Then they wrote down the lagrangian equation:
 
 $$ \frac{\delta L}{\delta t \delta q_{i}} - \frac{\delta L}{\delta q_{i}} = Q_{i}$$
 
 Where L = T - V is the lagrangian function, with T kinetic energy and V is the potential energy of the whole system whilst $$Q_{i}$$ are the generalized non-conservative forces acting on the entire system with respect to the coordinate $$q_{i}$$.
+
+On the rotary arm the torque $$\tau$$ of the motor is acting, as well a friction viscous force with coefficent $$B_{r}$$. For the pendulum we have the gravity and the viscous force with coefficent $$B_{p}$$.
 
 For the rotary arm:
 
@@ -30,7 +30,7 @@ For the pendulum:
 * inertia $$ J_{p} $$;
 * it has a lumped mass $$m_{p}$$ positioned at $$ \frac{L_{p}}{2} $$;
 * length $$ L_{p} $$;
-
+ 
 We have 2 differential equations of motion:
 
 $$ \frac{\delta L}{\delta t \delta \theta} - \frac{\delta L}{\delta \theta} = Q_{1}$$
@@ -51,11 +51,25 @@ Equation 2:
 $$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{theta}{2}-\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{alpha}$$
 </div>
 
+Moreover the motor used is a DC motor, with equation:
+
+<div style="overflow:auto;">
+Equation 3:
+$$\tau = \frac{\eta_{g}k_{g}\eta_{m}k_{t}(V_{m}(t)-k_{g}k_{m}(\frac{d}{dt}\theta(t)))}{r_{m}} $$
+</div>
+
+Where:
+
+* 
+* 
+
+
+By plugging it in equation 1, the input actually switches from the torque $$\tau$$ to the voltage $$\V_{m}$$
 To define an equation, in Maple we simply do:
 
-$$
+<code>
 eq := equation;
-$$
+</code>
 
 Expressing the time for the variable, but omitting it for the parameters. For example to define equation1 we would write:
 

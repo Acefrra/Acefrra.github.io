@@ -1,0 +1,28 @@
+I"Ö<p>The software Maple is a powerful symbolic tool, which has been created to generate the symbolic linear model, that would have been later used by Matlab, to compute the feedback controller.</p>
+
+<div class="image_left" style="width:40%"><!--Set the width here-->
+    <!--Path to the image-->
+    <img src="images/Maple_logo.png" style="width:100%" />
+    <!--Caption-->
+    <!--<h4>Maple</h4>-->
+</div>
+<div style="clear: left;">
+</div>
+
+<p>Even though the system was relatively simple, learning how to use this symbolic tool calculator can get handy since it allows to manipulate very involved expression as well write routines to manipulate the equation according to the needs of the user.</p>
+
+<p>Maple will be used to reduce the system to first order, linearize it and put the system in the state space form. It has also been used to simulate the non-linear model to see if the equation were consistent. In Maple not every library is loaded every time, but the user has to specify which one use within a Maple worksheet. In particular, it is of vital importance to include them at the top of the script:</p>
+
+<p><code>
+restart;                #This restart the environment, to avoid conflict with previous defined variables
+<br />
+<br />
+with(plots);            #To plot the solution to differential equations
+<br />
+<br />
+with(LinearAlgebra);    #To build the state space form
+<br />
+<br />
+with(VectorCalculus);   #To perform vector operation and so to linearize the model
+</code></p>
+:ET
