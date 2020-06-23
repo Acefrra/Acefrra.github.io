@@ -48,7 +48,7 @@ $$(m_{p}L^{2}_{r} +\frac{1}{4}m_{p}L_{p}^{2} - \frac{1}{4}m_{p}L_{p}^{2}cos(\alp
 </div>
 <div style="overflow:auto;">
 Equation 2:
-$$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{theta}{2}-\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{alpha}$$
+$$ -\frac{1}{2}m_{p}L_{p}L_{r}cos(\alpha)\ddot{\theta}+(J_{p}+\frac{1}{4}m_{p}L_{p}^{2})\ddot{\alpha}-(\frac{1}{4}m_{p}L_{p}^{2}cos(\alpha)sin(\alpha)\dot{\theta}(t)\frac{1}{2}m_{p}L_{p}g sin(\alpha) = -B_{p}\dot{\alpha}$$
 </div>
 
 Moreover the motor used is a DC motor, with equation:
@@ -58,10 +58,14 @@ Equation 3:
 $$\tau = \frac{\eta_{g}k_{g}\eta_{m}k_{t}(V_{m}(t)-k_{g}k_{m}(\frac{d}{dt}\theta(t)))}{r_{m}} $$
 </div>
 
-Where:
+Rotary Servo User Manual
+* kt , motor current-torque
+* km motor back-emf constant
+* kg high geat total gear ratio
+* etam motor efficiency
+* etag gearbox efficency
 
-* 
-* 
+Rotary Servo User Manual
 
 
 By plugging it in equation 1, the input actually switches from the torque $$\tau$$ to the voltage $$\V_{m}$$

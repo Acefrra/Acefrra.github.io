@@ -1,0 +1,20 @@
+I"�<p>The strength of Coppelia is the possibility of controlling the scene using lua-based scripts. Every coppelia object can be attqached to some child scripts. Those can be:</p>
+
+<ul>
+  <li><strong>Non-threaded child script</strong>, they contain a collection of blocking functions. This means that every time they are called, they should perform some task and then return control. If control is not returned, then the whole simulation halts. These functions are
+    <ul>
+      <li><strong>sysCall_init()</strong>, which is executed just one time when simulation starts</li>
+      <li><strong>sysCall actuation()</strong>, it loops code over time, generally to actuate joints of the system;</li>
+      <li><strong>sysCall sensing()</strong>, same as actuation, but it’s for reading (computing) some relevant variable of the system</li>
+    </ul>
+  </li>
+  <li><strong>Threaded child script</strong>, these are scripts that will launch in a thread. The launch (and resume) of threaded child scripts is handled by the default main script code. They won’t be used in this project.</li>
+</ul>
+
+<p>The Non-threaded script will be used mainly to perform the electromechanical actuation starting from the control voltage input fed by Matlab.</p>
+
+<p>Then a <strong>Customization script</strong> has been defined in order to measure the whole state of the system. They are different from child script as they contain a set of function that will be called either from a child script or from an external process.</p>
+
+<p>In Coppelia each object has an <strong>handle</strong> which identifies univocally that object. Through the handle and the built-in Coppelia functions it is possible to access bodies and joints properties and modify them.</p>
+
+:ET

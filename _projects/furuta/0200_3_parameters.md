@@ -49,3 +49,4 @@ data_electrical := [eta__g = 0.85,eta__m = 0.87,k__g = 70,k__m = 0.0076,k__t = 0
 <br><br>
 data := merge(data_mechanical, data_electrical);
 </code>
+

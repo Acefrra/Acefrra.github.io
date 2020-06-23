@@ -1,4 +1,4 @@
-I"‚<p>Even though we got the A and B matrixes, they are still parametric. To get them numerical in Maple we do:</p>
+I"Ê<p>Even though we got the A and B matrixes, they are still parametric. To get them numerical in Maple we do:</p>
 
 <p><code>
 A_data := subs(data, A);
@@ -35,15 +35,15 @@ B_data := subs(data, B);
 
 <p>In order to that it is necessary that the system is reachable that is the reachability matrix:</p>
 
-<p>$$R = \begin{pmatrix} A &amp; A^{2}B &amp;â€¦&amp; A^{n}B \end{pmatrix}</p>
+\[R = \begin{pmatrix} A &amp; A^{2}B &amp;...&amp; A^{n}B \end{pmatrix}\]
 
 <p>is full rank. In our case, n = 4, so the maple code will be:</p>
 
 <p><code>
-R := [A_data, A_data.B_data, A_data^2.B_data, A_data^3.B_data];
+R := Concatenate(2, A_data, A_data.B_data, A_data^2.B_data, A_data^3.B_data];       #2 means to merge the matrixes along columns.
 <br /><br />
 rank(R);
 </code></p>
 
-<p>since it is 4, the system is <strong>reachable</strong> and the system is <strong>stabilizable</strong>. Thus will it be possible to find the matrix K</p>
+<p>since it is 4, the system is <strong>reachable</strong>. Thus the system is <strong>stabilizable</strong>. As a result, will it be possible to find the matrix K.</p>
 :ET

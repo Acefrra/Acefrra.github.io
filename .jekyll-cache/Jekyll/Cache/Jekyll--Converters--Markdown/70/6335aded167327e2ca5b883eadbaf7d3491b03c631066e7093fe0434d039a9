@@ -1,0 +1,63 @@
+I"Í
+<p>After getting the matrixes A and B. It is possible to design the state feedback controller. This control technique uses the whole state x of the system to get information about the process, and keep it from diverging by using its input channels.</p>
+
+<p>This technique requires to be able to exactly measure the state of the system. That means it is necessary to have a high number of sensors.</p>
+
+<p>The block diagram of the system is the following:</p>
+
+<p>The new state space representation of the system will be:</p>
+
+\[\begin{cases} \dot x(t) = (A - B K) x(t) \\ y(t) = C x(t)\end{cases}\]
+
+<p>The matrix of the dynamic is A - BK. So it is possible to design the matrix K such that the system has desired poles.</p>
+
+<p>In particular, given the original system:</p>
+
+\[\Sigma = \begin{cases} \dot x(t) = A x(t) + B u(t) \\ y(t) = C x(t)\end{cases}\]
+
+<p>is transformed to the controllable canonical form:</p>
+
+\[\Sigma_{contr} = \begin{cases} \dot x(t) = A_{contr} x(t) + B_{contr} u(t) \\ y(t) = C x(t)\end{cases}\]
+
+<p>With:</p>
+
+\[A_{contr} = \begin{pmatrix}
+0 &amp; 1 &amp; 0 &amp; ... &amp; 0 \\
+. &amp; 0 &amp; 1 &amp; ... &amp; 0 \\
+. &amp; . &amp; . &amp; ... &amp; 0 \\
+0 &amp; . &amp; . &amp; 0   &amp; 1 \\
+-\alpha_{0} &amp; -\alpha_{1} &amp; . &amp; . &amp; -\alpha_{n-1}
+\end{pmatrix}\]
+
+\[B_{contr} = \begin{pmatrix}
+0 \\
+. \\
+. \\
+1 \\
+\end{pmatrix}\]
+
+<p>\(\alpha_{1}, \alpha_{2}, .... , \alpha_{n-1}\) are the coefficents of the charateristic polynomial \(p_{A}(s) = s^{n} + \alpha_{n-1}s^{n-1} + ... \alpha_{1}s + \alpha_{0}\) of the matrix \(A_{contr}\).</p>
+
+<p>If \(p_{desired} = (s-s_{1})(s-s{2})...(s-s_{n}) = s^{n} + \beta_{n-1}s^{n-1} + ... \beta_{1}s^{1} + \beta_{0}\) Then the K matrix will be built to be \(K = \begin{bmatrix}
+(\beta_{0} - \alpha_{0}) &amp; (\beta_{1} - \alpha_{1}) &amp; ... &amp; (\beta_{n-1} - \alpha_{n-1})
+\end{bmatrix}\)</p>
+
+<p>If we apply such state feedback to \(\Sigma_{contr}\), the matrix \(A_{contr}-B_{contr}K\) will be:</p>
+
+\[(A_{contr} - B_{contr} K) = \begin{pmatrix}
+0 &amp; 1 &amp; 0 &amp; ... &amp; 0 \\
+. &amp; 0 &amp; 1 &amp; ... &amp; 0 \\
+. &amp; . &amp; . &amp; ... &amp; 0 \\
+0 &amp; . &amp; . &amp; 0   &amp; 1 \\
+-\beta_{0} &amp; -\beta_{1} &amp; . &amp; . &amp; -\beta_{n-1}
+\end{pmatrix}\]
+
+<p>If A is not in the controllable form, it can be proved that the transformation matrix T = R M brings to that form, althouh this require R is inveertible that is full rank, as already discussed. In this case the matrix K must be transformed back in the original coordinates.</p>
+
+<p>In particular the matrix K will be given by:</p>
+
+\[K = \begin{bmatrix}
+(\beta_{0} - \alpha_{0}) &amp; (\beta_{1} - \alpha_{1}) &amp; ... &amp; (\beta_{n-1} - \alpha_{n-1})
+\end{bmatrix} M^{-1} R^{-1}\]
+
+:ET

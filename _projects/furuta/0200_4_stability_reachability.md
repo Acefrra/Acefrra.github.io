@@ -46,14 +46,16 @@ Neverthless, if we can stabilize this system and put all the eigen inside the le
 
 In order to that it is necessary that the system is reachable that is the reachability matrix:
 
-$$R = \begin{pmatrix} A & A^{2}B &...& A^{n}B \end{pmatrix}
+$$
+R = \begin{pmatrix} A & A^{2}B &...& A^{n}B \end{pmatrix}
+$$
 
 is full rank. In our case, n = 4, so the maple code will be:
 
 <code>
-R := [A_data, A_data.B_data, A_data^2.B_data, A_data^3.B_data];
+R := Concatenate(2, A_data, A_data.B_data, A_data^2.B_data, A_data^3.B_data];       #2 means to merge the matrixes along columns.
 <br><br>
 rank(R);
 </code>
 
-since it is 4, the system is **reachable** and the system is **stabilizable**. Thus will it be possible to find the matrix K
+since it is 4, the system is **reachable**. Thus the system is **stabilizable**. As a result, will it be possible to find the matrix K.
