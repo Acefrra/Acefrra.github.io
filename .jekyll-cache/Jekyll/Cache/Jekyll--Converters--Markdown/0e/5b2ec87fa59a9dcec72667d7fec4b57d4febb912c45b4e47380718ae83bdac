@@ -1,4 +1,4 @@
-I"^<p>The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates \([q_{1}, q_{2}, ...... q_{n}]\) with \(n = d.o.f\).</p>
+I"U<p>The model of the system is from Quansar. To model the system they used a lagrangian approach. To do that it is necessary to describe the configuration of the sytem with the lagrangian coordinates \([q_{1}, q_{2}, ...... q_{n}]\) with \(n = d.o.f\).</p>
 
 <div class="image_center">
     <!--Path to the image-->
@@ -58,18 +58,17 @@ Equation 3:
 $$\tau = \frac{\eta_{g}k_{g}\eta_{m}k_{t}(V_{m}(t)-k_{g}k_{m}(\frac{d}{dt}\theta(t)))}{r_{m}} $$
 </div>
 
-<p>Rotary Servo User Manual</p>
+<p>Where:</p>
+
 <ul>
-  <li>kt , motor current-torque</li>
-  <li>km motor back-emf constant</li>
-  <li>kg high geat total gear ratio</li>
-  <li>etam motor efficiency</li>
-  <li>etag gearbox efficency</li>
+  <li>\(k_{t}\) , motor current-torque;</li>
+  <li>\(k_{m}\) motor back-emf constant;</li>
+  <li>\(k_{g}\) high gear total gear ratio;</li>
+  <li>\(\eta_{m}\) motor efficiency;</li>
+  <li>\(\eta_{g}\) gearbox efficency;</li>
 </ul>
 
-<p>Rotary Servo User Manual</p>
-
-<p>By plugging it in equation 1, the input actually switches from the torque \(\tau\) to the voltage \(\V_{m}\)
+<p>By plugging it in equation 1, the input actually switches from the torque \(\tau\) to the voltage \(V_{m}\)
 To define an equation, in Maple we simply do:</p>
 
 <p><code>

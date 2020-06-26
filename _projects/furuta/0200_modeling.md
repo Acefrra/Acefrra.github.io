@@ -58,17 +58,15 @@ Equation 3:
 $$\tau = \frac{\eta_{g}k_{g}\eta_{m}k_{t}(V_{m}(t)-k_{g}k_{m}(\frac{d}{dt}\theta(t)))}{r_{m}} $$
 </div>
 
-Rotary Servo User Manual
-* kt , motor current-torque
-* km motor back-emf constant
-* kg high geat total gear ratio
-* etam motor efficiency
-* etag gearbox efficency
+Where:
 
-Rotary Servo User Manual
+* $$k_{t}$$ , motor current-torque;
+* $$k_{m}$$ motor back-emf constant;
+* $$k_{g}$$ high gear total gear ratio;
+* $$\eta_{m}$$ motor efficiency;
+* $$\eta_{g}$$ gearbox efficency;
 
-
-By plugging it in equation 1, the input actually switches from the torque $$\tau$$ to the voltage $$\V_{m}$$
+By plugging it in equation 1, the input actually switches from the torque $$\tau$$ to the voltage $$V_{m}$$
 To define an equation, in Maple we simply do:
 
 <code>
