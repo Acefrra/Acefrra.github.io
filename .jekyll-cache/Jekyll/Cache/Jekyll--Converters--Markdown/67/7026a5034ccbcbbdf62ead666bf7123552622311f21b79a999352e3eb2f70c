@@ -1,4 +1,4 @@
-I"˜<p>Once understood how the two software communicate, it is possible to write the whole main. The main goes thoughr several steps:</p>
+I"ê<p>Once understood how the two software communicate, it is possible to write the whole main. The main goes thoughr several steps:</p>
 
 <ol>
   <li>Initializing communication and enabling synchronous mode;</li>
@@ -6,13 +6,23 @@
   <li>Implementing the control. In particular:
     <ol>
       <li>Measuring the state \(x = [\theta, \alpha, \dot\theta, \dot\alpha]\);</li>
-      <li>Computing the voltage \(Vm = -K*x + N *r\);</li>
+      <li>Computing the voltage (applying either swing-up or balancin with tracking);</li>
       <li>Feeding the voltage to Coppelia;</li>
     </ol>
   </li>
   <li>Stopping Simulation;</li>
   <li>Output of the system response;</li>
   <li>Computing the percentage overshoot and the settling time;</li>
+  <li>PLotting the measured system response;</li>
+</ol>
+
+<p>The step 3 is applied several times thorugh 4 cycles:</p>
+
+<ol>
+  <li>In the first cycle the pendulum is downward, and a swing up control is applied to put it upwards;</li>
+  <li>The pendulum is brought to the origin;</li>
+  <li>A unitary step is fed to the origin;</li>
+  <li>A reference \(\theta_{d}\) is fed;</li>
 </ol>
 
 <pre>
