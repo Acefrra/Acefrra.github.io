@@ -9,11 +9,11 @@ It has been possible to balance the pendulum at its upright position. However as
 
 However, it is possible to develop a controller that brings the pendulum to the equilibrium point. So that it would be possible to apply the balancing control. This controller is known as **Energy-Shaping Controller** and in this specific case it is called **Swing-Up Controller**, as it is able to swing up the pendulum from the downright position.
 
-These type of controller is energy based. Infact it applies a control to increase the energy up until it reaches the target. In our case the target is the energy when the pendulum is upright. The energy of the pendulum is given by the two components:
+These type of controllers are energy based. In fact it applies a control to increase the energy up until it reaches the target. In our case the target is the energy when the pendulum is upright. The energy of the pendulum is given by the two components:
 
 $$ E_{k} = \frac{1}{2}J_{p}\dot\alpha^{2} $$
 
-$$ E_{p} = \frac{1}{2}m-{p}gL_{p}(1-cos(\alpha)) $$
+$$ E_{p} = \frac{1}{2}m_{p}gL_{p}(1-cos(\alpha)) $$
 
 $$ E = E_{k} + E_{p} = \frac{1}{2}J_{p}\dot\alpha^{2} + \frac{1}{2}m_{p}gL_{p}(1-cos(\alpha)) $$
 
@@ -24,7 +24,7 @@ $$ E = E_{p} (\alpha = 0) = 0 $$
 The energy based controller will apply a torque until the difference between the reference energy $$E_{d} $$ and the current energy $$ E $$ is small.
 To apply this technique it is necessary to express the energy of the non-actuated link as function of the input of the system.
 
-In general this is obtained by using a PFL (Partial Feedback Linearization) in order to get an equation of motion where there is only the angle of the nonactuated link and an input $$u$$ of the system. However, in this case Quansar built a more simple equation of motion using a simplified model: [1] <!--Cite to the A NEW STRATEGY FOR SWINGING UP AN INVERTED PENDULUM M. Wiklund, A. Kristenson and KJ. Astrom -->
+In general this is obtained by using a PFL (Partial Feedback Linearization) in order to get an equation of motion where there is only the angle of the nonactuated link and an input $$u$$ of the system. However, in this case Quansar built a more simple equation of motion using a simplified model: [1], [2] <!--Cite to the A NEW STRATEGY FOR SWINGING UP AN INVERTED PENDULUM M. Wiklund, A. Kristenson and KJ. Astrom -->
 <!-- @conference{b88f3f5844d746848104a5b074ad08c0,
 title = "A New Strategy for Swinging Up an Inverted Pendulum",
 author = "Anders Kristenson and {\AA}str{\"o}m, {Karl Johan} and Magnus Wiklund",
@@ -44,7 +44,7 @@ At this point $$ \tilde E = E- E_{d} = E $$ and so:
 
 $$ \dot{\tilde E} = \dot \alpha(J_{p}\ddot \alpha + 1/2m_{p}gL_{p}sin(\alpha)) $$
 
-And by substituing sin(\alpha) we get 
+And by substituing $$sin(\alpha)$$ from the simplified model, we get 
 
 $$ \dot E = -m_p u L_{p} \dot\alpha cos(\alpha) $$
 

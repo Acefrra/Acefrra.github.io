@@ -16,7 +16,7 @@ Then they wrote down the lagrangian equation:
 
 $$ \frac{\delta L}{\delta t \delta q_{i}} - \frac{\delta L}{\delta q_{i}} = Q_{i}$$
 
-Where L = T - V is the lagrangian function, with T kinetic energy and V is the potential energy of the whole system whilst $$Q_{i}$$ are the generalized non-conservative forces acting on the entire system with respect to the coordinate $$q_{i}$$.
+Where L = T - V is the lagrangian function, with T kinetic energy and V potential energy of the whole system whilst $$Q_{i}$$ are the generalized non-conservative forces acting on the entire system with respect to the coordinate $$q_{i}$$.
 
 On the rotary arm the torque $$\tau$$ of the motor is acting, as well a friction viscous force with coefficent $$B_{r}$$. For the pendulum we have the gravity and the viscous force with coefficent $$B_{p}$$.
 
@@ -65,21 +65,25 @@ Where:
 * $$k_{g}$$ high gear total gear ratio;
 * $$\eta_{m}$$ motor efficiency;
 * $$\eta_{g}$$ gearbox efficency;
+* $$r_{m}$$ is the motor resistance;
 
-By plugging it in equation 1, the input actually switches from the torque $$\tau$$ to the voltage $$V_{m}$$
+By plugging it in equation 1, the input is going to be the voltage $$V_{m}$$.
 To define an equation, in Maple we simply do:
+
 
 <code>
 eq := equation;
 </code>
 
+
 Expressing the time for the variable, but omitting it for the parameters. For example to define equation1 we would write:
+
 
 <code>
     eq := m__p*L^2__r + 1/4*m__p*L__p^2 - 1/4*m__p*L__p^2*cos(alpha)^2 + J__r*diff(theta,t,t) - 1/2*(m__p*L__p*L__r*cos(alpha))*diff(alpha(t),t,t)*diff(alpha,t,t) + (1/2*m__p*L__p^2*sin(alpha)*cos(alpha))*diff(theta,t)*diff(alpha,t)+(1/2*m__p*L__p*L__r*sin(alpha))*diff(alpha,t)^2 = tau - B__r*diff(theta(t),t)
 </code>
 
-In particular <code> __p </code> is used to write something at pedix, <code> diff(theta(t),t) </code>, compute the first derivative of theta(t) with respect to t (the function must be declared as function of t), <code> diff(theta(t),t,t) </code> is for the second derivative. And we use round brackets to define the order of operations. 
+In particular "<code> __p </code>" is used to write something at pedix, <code> diff(theta(t),t) </code>, compute the first derivative of <code>theta(t)</code> with respect to <code>t</code> (the function must be declared as function of <code>t</code>), <code> diff(theta(t),t,t) </code> is for the second derivative. And we use round brackets to define the order of operations. 
 
 
 

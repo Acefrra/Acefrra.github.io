@@ -9,7 +9,7 @@ The placement of the pole will strictly depend on the performance we expect from
 
 The requirement decided were:
 
-* Percentage Overshoot %OS = 12%;
+* Percentage Overshoot %OS = 10%;
 * Settling Time = 3s;
 
 This requirements refer to the step response of the system to the reference input $$ \theta_{d} $$, that is the step response of the transfer function TF. The requirements are defined for a second order system of the type:
@@ -24,9 +24,9 @@ The relation between the settling time $$T_{s}$$ and $$\omega$$ and $$\zeta$$ is
 
 $$ \omega \approx \frac{4}{T_{s}\zeta} $$
 
-which is valid if $$\zeta \ll 1$$.
+which is valid if $$\zeta \ll 1$$.[3]
 
-The poles of such sysem are $$p_{12} = -\sigma + j\omega_{d} $$where $$\sigma = \zeta \omega_{n} $$and $$\omega_{d}=\omega_{n}\sqrt[2]{(1-\zeta^{2})}$$. However our system going to be of fourth order. For this reason, the other two poles will be chosen in such a way they can be negleted, that is their real part must at least 10 times the real part of the complex poles, also known as **dominant poles**. SO p3= 
+The poles of such sysem are $$p_{12} = -\sigma + j\omega_{d} $$where $$\sigma = \zeta \omega_{n} $$and $$\omega_{d}=\omega_{n}\sqrt[2]{(1-\zeta^{2})}$$. However our system going to be of fourth order. For this reason, the other two poles will be chosen in such a way they can be negleted, that is their real part must at least 10 times the real part of the complex poles, also known as **dominant poles**. 
 
 In matlab we have the following code:
 

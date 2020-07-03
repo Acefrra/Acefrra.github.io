@@ -1,0 +1,35 @@
+I"T<p>The CoppeliaSim simulation scene has been created:</p>
+
+<div style="text-align:center">
+    <!--Path to the image-->
+    <img src="images/Scene.PNG" style="width: 45%" />
+    <!--Caption-->
+    <h4>Figure - Coppelia Scene.</h4>
+</div>
+
+<p>The system is made up of 3 bodies:</p>
+
+<ul>
+  <li>Frame, which holds the Furuta Pendulum and keep it lifted from ground;</li>
+  <li>Rotating Arm;</li>
+  <li>Pendulum;</li>
+</ul>
+
+<p>We don’t want the Frame to move, for this reason the body will not be a <strong>dynamical</strong> body in the scene. On the other hand, Rotating Arm and Pendulum will be. Their mass will be set respectively to 0.125kg and 0.250kg. As for the moment of inertia, they are to be set for three axes. They will be put to 0.0023 kg m^2. Moreover since we don’t want the arm and the pendulum to collide each other we will set the respondable mask accordingly.</p>
+
+<div style="text-align:center">
+    <!--Path to the image-->
+    <img src="images/Frame.PNG" style="width: 45%" />
+    <!--Caption-->
+    <h4>Figure - Properties of the Frame Body.</h4>
+</div>
+
+<div style="text-align:center">
+    <!--Path to the image-->
+    <img src="images/Pendulum.PNG" style="width: 45%" />
+    <img src="images/RotatingArm.PNG" style="width: 45%;" />
+    <!--Caption-->
+    <h4>Figure - Properties respectively for Pendulum and RotatingArm.</h4>
+</div>
+
+:ET

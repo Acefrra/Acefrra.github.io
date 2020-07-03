@@ -6,6 +6,12 @@
     type: sect
 ---
 
-[1] Rotary Pendulum Workbook (Student) by Quanser
+<a class="reference" href="https://www.made-for-science.com/de/quanser/?df=made-for-science-quanser-rotary-inverted-pendulum-coursewarestud-labview.pdf">[1] Rotary Pendulum Workbook (Student) by Quanser - Jacob Apkarian, Paul Karam and Michel Lévis. </a>
 
-[2] Swinging Up a Pendulum by Energy Control - Astrom and Furuta
+<a class="reference" href="https://www.control.utoronto.ca/~broucke/ece1653s/Intro/ast_fur96.pdf">[2] Swinging Up a Pendulum by Energy Control - K. J. Astrom and K. Furuta - 13th Triennal World Congress, San Francisco USA.</a>
+
+<a class="reference" href="https://en.wikipedia.org/wiki/Settling_time">[3] Settling Time - Wikipedia. </a>
+
+<a class="reference" href="https://www.youtube.com/watch?v=jGEkmDRsq_M">[4] What are non-minimum phase systems - Brian Douglas. </a>
+
+<a class="reference" href="https://www.coppeliarobotics.com/helpFiles/">[5] CoppeliaSim User Manual</a>

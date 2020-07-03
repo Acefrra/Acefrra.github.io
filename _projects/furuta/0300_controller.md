@@ -8,11 +8,7 @@
 
 After getting the matrixes A and B. It is possible to design the state feedback controller. This control technique uses the whole state x of the system to get information about the process, and keep it from diverging by using its input channels. 
 
-
-
 This technique requires to be able to exactly measure the state of the system. That means it is necessary to have a high number of sensors.
-
-The block diagram of the system is the following:
 
 The new state space representation of the system will be:
 

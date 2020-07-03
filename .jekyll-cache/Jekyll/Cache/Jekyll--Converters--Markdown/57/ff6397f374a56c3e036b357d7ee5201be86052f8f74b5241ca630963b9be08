@@ -1,0 +1,12 @@
+I"@<p>The CoppeliaSim simulator This is an integrated software which includes several physic engines (Bullet is a free version included in it) as well as the Lua interface to control the scene. It has a GUI to control it, but but it’s possible to associate LUA child scripts to the component and joints to simulate sensors and actuators depending on the application.</p>
+
+<div class="image_left">
+    <!--Path to the image-->
+     <img src="images/CoppeliaSim_logo.png" style="width: 50%;" />
+    <!--Caption-->
+    <!-- <h4></h4> -->
+</div>
+<div style="clear: left;">
+</div>
+
+:ET

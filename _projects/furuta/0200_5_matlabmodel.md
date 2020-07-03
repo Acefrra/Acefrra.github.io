@@ -5,7 +5,13 @@
     title: Matlab Linear Model
 ---
 
-After getting the matrixes A and B in Maple, the linear model can be easily exported in Matlab. 
+After getting the matrixes A and B in Maple, the linear model can be easily exported in Matlab. The Maple code to export a data structure to be ready to be copied and pasted in Matlab is:
+
+<code>
+
+</code>
+
+So we get the following variable ready to be used. To load the parameters the Matlab function FURPEN_SSR_eqns is used:
 
 <code>
 % Set the electromechanical system model
@@ -32,8 +38,7 @@ After getting the matrixes A and B in Maple, the linear model can be easily expo
 <br>FURPEN_SSR_eqns; %This runs furuta pendulum model and sets up its state space representation
 </code>
 
-
-The script FURPEN_SSR_eqns implements the symbolic equation obtained in Maple. Since we are going to design a follower for the angle $$\theta$$ we will be getting just this state so $$ C = \begin{pmatrix} 1 & 0 & 0 & 0 \end{pmatrix} $$.
+The script <code>FURPEN_SSR_eqns</code> implements the symbolic equation obtained in Maple. Since we are going to design a follower for the angle $$\theta$$ we will be getting just this state so $$ C = \begin{pmatrix} 1 & 0 & 0 & 0 \end{pmatrix} $$. This function will need the symbolic expression of the matrixes A and B.
 
 <code>
 % State Space Representation

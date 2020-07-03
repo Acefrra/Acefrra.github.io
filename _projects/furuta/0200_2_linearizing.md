@@ -9,7 +9,7 @@ At this point it is sufficient to linearize the model to start designing the lin
 
 The goal is to keep the pendulum upward. According to the model, this configuration is associated with the state:
 
-$$\theta = \theta_{0} = 3 rad., \alpha = 0 rad., \theta_{dot} = 0\frac{rad.}{s}, \alpha_{dot} = 0\frac{rad.}{s} $$.
+$$\theta = \theta_{0}, \alpha = 0\text{ rad. ,} \theta_{dot} = 0\frac{rad.}{s}, \alpha_{dot} = 0\frac{rad.}{s} $$.
 
 Which is our operating point.
 
@@ -66,7 +66,7 @@ F(x) \approx F(\begin{pmatrix}
     \end{pmatrix})
 $$
 
-In Maple I defined the procedure <code>linearize(eqs, lin_point)</code>, which takes as arguments eqs and lin_point, and compute the simbolic linearization.
+In Maple the procedure <code>linearize(eqs, lin_point)</code> has been defined which takes as arguments <code>eqs </code>and <code>lin_point</code>, and compute the simbolic linearization.
 
 All in all, the code will be the following:
 
@@ -96,12 +96,12 @@ So basically, we are going to collect the matrix A and B from the linear equatio
     <br><br>
     vardot := diff(var, t);
     <br><br>
-    eqs_state_space2 := solve(eqs_st, vardot); #It is necessary to solve the equation with respect to the derivative.
+    eqs_state_space2 := solve(eqs_st, vardot); #It is necessary to solve the equation with respect to the derivative, in order to isolate them.
     <br><br>
     A, RES := GenerateMatrix(map(rhs, eqs_state_space2[1]), var)
     #[1] is just to get rid of the outer square brackets.
     <br><br>
-    B, RES := GenerateMatrix(map(rhs, eqs_state_space[1]), [V__m])
+    B, RES := GenerateMatrix(map(rhs, eqs_state_space2[1]), [V__m])
 </code>
 
 

@@ -5,9 +5,9 @@
     title: Final Controller
 ---
 
-So we can balance the pendulum if this is close enough to the upward configuration, and we can make it close to it if it is not. The last is to merge this to controller.
+So we can balance the pendulum if this is close enough to the upward configuration, and we can make it close to it if it is not. The last is to merge this to the controller.
 
-Basically at every step we will compute the distance of the angle \alpha from the ideal value. If this distance is smaller than \epsilon then we try to balance it, otherwise we apply the swing up control.
+Basically at every step we will compute the distance of the angle $$\alpha$$ from the ideal value ($$\alpha = 0$$). If this distance is smaller than a small value $$\epsilon$$ then we try to balance it, otherwise we apply the swing up control.
 
 So the final form of the controller will be:
 

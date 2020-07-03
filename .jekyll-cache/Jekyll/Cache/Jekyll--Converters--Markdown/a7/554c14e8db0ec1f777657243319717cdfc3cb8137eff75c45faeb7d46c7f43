@@ -1,0 +1,5 @@
+I"<p>To enable it sever side the BlueZero plugin must be enabled, after loading the scene you click on the Add-ons-&gt;BlueZeroInterface from the Menu Bar. It will be enable via the plugin and running the lua script simExtBlueZero.dll. It creates the server side, and <strong>assign a name to the channel</strong>. The channel name is displayed in the command dialogue of Coppelia after running the add-on, and will be used when enabling the B0 within Matlab.</p>
+
+<p>You can see the Demo in the Result to see the enabling procedure.</p>
+
+:ET
