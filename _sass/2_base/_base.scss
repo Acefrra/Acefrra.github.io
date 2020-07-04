@@ -132,6 +132,23 @@ h5{
     }
 }
 
+.contactbar {
+    color: $contactbar-address-color;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px; //Top and Bottom Spacing aren't displayed for inline elements
+    display: inline-block; //Displays an element as an inline-level block container.
+                            //The element itself is formatted as an inline element,
+                            //but you can apply height and width values or padding.
+}
+.contactbar img{
+    height: 1em;
+}
+.contactbar a{
+    text-decoration: none;
+    color: #000000;
+}
+
 @media screen and (max-width: 1920px) {
     //desktop
     .documentation{
@@ -176,6 +193,34 @@ h5{
         width: 50%;
     }
     .projects h1{
+        position: relative;
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 1920px) {
+    //desktop
+    .contacts{
+        position: relative;
+        top: $top-position-contacts;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .contacts h1{
+        position: relative;
+        text-align: center;
+    }
+  }
+  //phones
+@media screen and (max-width: 600px) {
+    .contacts{
+        position: relative;
+        top: $top-position-contacts;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .contacts h1{
         position: relative;
         text-align: center;
     }
